@@ -1,0 +1,12 @@
+{
+	"name": "AzureBlobStorage1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"containerUri": "https://harishoutputfiles1adls.blob.core.windows.net/outputfiles",
+			"authenticationType": "Anonymous"
+		}
+	}
+}

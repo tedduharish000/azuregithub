@@ -1,0 +1,29 @@
+{
+	"name": "email_alert",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "filename",
+					"value": "employee"
+				}
+			}
+		],
+		"variables": {
+			"filename": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2024-11-22T10:38:48Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

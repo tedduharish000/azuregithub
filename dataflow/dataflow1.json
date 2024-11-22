@@ -1,0 +1,92 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "DelimitedText5",
+						"type": "DatasetReference"
+					},
+					"name": "employeedata1"
+				},
+				{
+					"dataset": {
+						"referenceName": "DelimitedText4",
+						"type": "DatasetReference"
+					},
+					"name": "employeedata"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "employeejoiningtable",
+						"type": "DatasetReference"
+					},
+					"name": "output"
+				}
+			],
+			"transformations": [
+				{
+					"name": "join1"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          {First Name} as string,",
+				"          Gender as string,",
+				"          {Start Date} as string,",
+				"          {Last Login Time} as string,",
+				"          Salary as string,",
+				"          {Bonus %} as string,",
+				"          {Senior Management} as string,",
+				"          Team as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> employeedata1",
+				"source(output(",
+				"          Name as string,",
+				"          {Position Title} as string,",
+				"          Department as string,",
+				"          {Employee Annual Salary} as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> employeedata",
+				"employeedata1, employeedata join({First Name} == Name,",
+				"     joinType:'left',",
+				"     matchType:'exact',",
+				"     ignoreSpaces: false,",
+				"     broadcast: 'auto')~> join1",
+				"join1 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     input(",
+				"          product_id as string,",
+				"          product_name as string,",
+				"          category as string,",
+				"          discounted_price as string,",
+				"          actual_price as string,",
+				"          discount_percentage as string,",
+				"          rating as string,",
+				"          rating_count as string,",
+				"          about_product as string,",
+				"          user_id as string,",
+				"          user_name as string,",
+				"          review_id as string,",
+				"          review_title as string,",
+				"          review_content as string,",
+				"          img_link as string,",
+				"          product_link as string",
+				"     ),",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> output"
+			]
+		}
+	}
+}

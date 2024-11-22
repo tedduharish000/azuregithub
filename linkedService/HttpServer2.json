@@ -1,0 +1,13 @@
+{
+	"name": "HttpServer2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "http://api.openweathermap.org/data/2.5/weather?q=visakhapatnam&appid=778e19ff2c03dc773e8010c15638e9e7",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"name": "practiceazuredatafactory2",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "167360d8-1936-41e9-a234-ba19041ad25c",
+		"tenantId": "5fe78ac1-1afe-4009-aa04-a71efb4a5042"
+	}
+}

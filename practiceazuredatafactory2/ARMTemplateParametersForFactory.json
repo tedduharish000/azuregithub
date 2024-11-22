@@ -1,0 +1,132 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "practiceazuredatafactory2"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage10_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage2_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage3_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage4_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage5_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage6_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage7_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage8_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage9_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase3_password": {
+			"value": ""
+		},
+		"SqlServer1_password": {
+			"value": ""
+		},
+		"harishadlsstoragelink_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://harishoutputfiles1adls.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage10_properties_typeProperties_url": {
+			"value": "https://harishadlsstorage.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage2_properties_typeProperties_url": {
+			"value": "https://harishoutputfiles1adls.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage3_properties_typeProperties_url": {
+			"value": "https://harishoutputfiles1adls.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage4_properties_typeProperties_url": {
+			"value": "https://harishadlsstorage.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage5_properties_typeProperties_url": {
+			"value": "https://harishadlsstorage.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage6_properties_typeProperties_url": {
+			"value": "https://harishadlsstorage.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage7_properties_typeProperties_url": {
+			"value": "https://awstoragedatalakeadls.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage8_properties_typeProperties_url": {
+			"value": "https://harishadlsstorage.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage9_properties_typeProperties_url": {
+			"value": "https://harishadlsstorage.dfs.core.windows.net/"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "harishdatabasepractice.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "harishsqldatabase"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "harish"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"value": "myserver.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"value": "@{linkedService().dbo_table}"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"value": "harish"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_server": {
+			"value": "harishdatabasepractice.database.windows.net"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_database": {
+			"value": "harishsqldatabase"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_userName": {
+			"value": "harish"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "http://api.openweathermap.org/data/2.5/weather"
+		},
+		"HttpServer2_properties_typeProperties_url": {
+			"value": "http://api.openweathermap.org/data/2.5/weather?q=visakhapatnam&appid=778e19ff2c03dc773e8010c15638e9e7"
+		},
+		"HttpServer3_properties_typeProperties_url": {
+			"value": "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnZmREs1ZVhGZ1lzZlE2dm5rbzBELXFRRVRHZ3xBQ3Jtc0tueGZYMzFuWmR0Zll1d0tXVUJsTE9uYVZwTTB3OHduT1hqcXVleG8wNjdwY3hoYmRSQzhQNDJ5SWRtWnR0WHNwdHk1UjVJYXN4Zng5bnlXdnp6cTRrckFJTEp0YkwzUnNOeHYwWmdvMlNfY254c3E3bw&q=https%3A%2F%2Fdrive.usercontent.google.com%2Fu%2F0%2Fuc%3Fid%3D1bmmtkc5NLZQ4iU6Qz_7di-juuxA2kT1t%26export%3Ddownload&v=NaNZ6kMS8Oo"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "DESKTOP-OK874LC"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "harish"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "sa"
+		},
+		"harishadlsstoragelink_properties_typeProperties_url": {
+			"value": "https://harishadlsstorage.dfs.core.windows.net/"
+		}
+	}
+}

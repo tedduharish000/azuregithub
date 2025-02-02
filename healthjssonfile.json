@@ -1,0 +1,101 @@
+{
+  "hospital": {
+    "name": "City General Hospital",
+    "location": "123 Main Street, Visakhapatnam",
+    "departments": ["Cardiology", "Neurology", "Orthopedics", "Pediatrics"]
+  },
+  "patients": [
+    {
+      "patient_id": "P001",
+      "name": "Rajesh Kumar",
+      "age": 45,
+      "gender": "Male",
+      "contact": {
+        "phone": "+91 9876543210",
+        "email": "rajesh.kumar@example.com"
+      },
+      "medical_history": [
+        {
+          "condition": "Diabetes",
+          "diagnosed_on": "2015-06-10",
+          "current_status": "Under Control"
+        },
+        {
+          "condition": "Hypertension",
+          "diagnosed_on": "2018-09-15",
+          "current_status": "Requires Monitoring"
+        }
+      ],
+      "appointments": [
+        {
+          "appointment_id": "A1001",
+          "doctor": "Dr. Sunita Sharma",
+          "department": "Cardiology",
+          "date": "2025-02-10",
+          "time": "10:30 AM",
+          "status": "Scheduled"
+        }
+      ],
+      "prescriptions": [
+        {
+          "prescription_id": "RX2001",
+          "date": "2025-01-20",
+          "medications": [
+            {
+              "name": "Metformin",
+              "dosage": "500 mg",
+              "frequency": "Twice a day"
+            },
+            {
+              "name": "Amlodipine",
+              "dosage": "5 mg",
+              "frequency": "Once a day"
+            }
+          ],
+          "prescribed_by": "Dr. Sunita Sharma"
+        }
+      ]
+    },
+    {
+      "patient_id": "P002",
+      "name": "Anjali Verma",
+      "age": 32,
+      "gender": "Female",
+      "contact": {
+        "phone": "+91 9123456789",
+        "email": "anjali.verma@example.com"
+      },
+      "medical_history": [
+        {
+          "condition": "Asthma",
+          "diagnosed_on": "2012-03-22",
+          "current_status": "Mild"
+        }
+      ],
+      "appointments": [
+        {
+          "appointment_id": "A1002",
+          "doctor": "Dr. Rahul Mehta",
+          "department": "Pulmonology",
+          "date": "2025-02-15",
+          "time": "11:00 AM",
+          "status": "Scheduled"
+        }
+      ],
+      "prescriptions": [
+        {
+          "prescription_id": "RX2002",
+          "date": "2025-01-25",
+          "medications": [
+            {
+              "name": "Salbutamol Inhaler",
+              "dosage": "2 puffs",
+              "frequency": "As needed"
+            }
+          ],
+          "prescribed_by": "Dr. Rahul Mehta"
+        }
+      ]
+    }
+  ]
+}

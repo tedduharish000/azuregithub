@@ -2,7 +2,7 @@
   "hospital": {
     "name": "City General Hospital",
     "location": "123 Main Street, Visakhapatnam",
-    "departments": ["Cardiology", "Neurology", "Orthopedics", "Pediatrics"]
+    "departments": ["Cardiology", "Neurology", "Orthopedics", "Pediatrics", "Dermatology", "Gastroenterology"]
   },
   "patients": [
     {
@@ -34,6 +34,14 @@
           "date": "2025-02-10",
           "time": "10:30 AM",
           "status": "Scheduled"
+        },
+        {
+          "appointment_id": "A1003",
+          "doctor": "Dr. Amit Patil",
+          "department": "Orthopedics",
+          "date": "2025-02-20",
+          "time": "2:00 PM",
+          "status": "Scheduled"
         }
       ],
       "prescriptions": [
@@ -49,6 +57,18 @@
             {
               "name": "Amlodipine",
               "dosage": "5 mg",
+              "frequency": "Once a day"
+            }
+          ],
+          "prescribed_by": "Dr. Sunita Sharma"
+        },
+        {
+          "prescription_id": "RX2003",
+          "date": "2025-01-28",
+          "medications": [
+            {
+              "name": "Losartan",
+              "dosage": "50 mg",
               "frequency": "Once a day"
             }
           ],
@@ -80,6 +100,14 @@
           "date": "2025-02-15",
           "time": "11:00 AM",
           "status": "Scheduled"
+        },
+        {
+          "appointment_id": "A1004",
+          "doctor": "Dr. Priya Yadav",
+          "department": "Dermatology",
+          "date": "2025-02-18",
+          "time": "9:30 AM",
+          "status": "Scheduled"
         }
       ],
       "prescriptions": [
@@ -94,6 +122,52 @@
             }
           ],
           "prescribed_by": "Dr. Rahul Mehta"
+        }
+      ]
+    },
+    {
+      "patient_id": "P003",
+      "name": "Suresh Reddy",
+      "age": 28,
+      "gender": "Male",
+      "contact": {
+        "phone": "+91 9988776655",
+        "email": "suresh.reddy@example.com"
+      },
+      "medical_history": [
+        {
+          "condition": "Back Pain",
+          "diagnosed_on": "2020-08-10",
+          "current_status": "Ongoing"
+        }
+      ],
+      "appointments": [
+        {
+          "appointment_id": "A1005",
+          "doctor": "Dr. Neelam Gupta",
+          "department": "Orthopedics",
+          "date": "2025-02-12",
+          "time": "3:00 PM",
+          "status": "Scheduled"
+        }
+      ],
+      "prescriptions": [
+        {
+          "prescription_id": "RX2004",
+          "date": "2025-01-18",
+          "medications": [
+            {
+              "name": "Ibuprofen",
+              "dosage": "200 mg",
+              "frequency": "Once a day"
+            },
+            {
+              "name": "Paracetamol",
+              "dosage": "500 mg",
+              "frequency": "Twice a day"
+            }
+          ],
+          "prescribed_by": "Dr. Neelam Gupta"
         }
       ]
     }
